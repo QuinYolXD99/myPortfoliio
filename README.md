@@ -1,4 +1,4 @@
-# Freelancer Theme for Vuetify
+# Yol Torres
 
 ## Project setup
 ```

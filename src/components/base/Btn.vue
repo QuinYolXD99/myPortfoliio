@@ -1,6 +1,7 @@
 <template>
   <v-btn
-    color="secondary"
+    dark
+    color="primary"
     rounded
   >
     <slot />

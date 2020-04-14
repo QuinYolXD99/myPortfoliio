@@ -1,10 +1,12 @@
 <template>
-  <v-footer
-    height="88"
-    class="justify-center"
-  >
-    <social-media large />
-  </v-footer>
+   <v-footer class="justify-center" color="#292929" height="50">
+      <div
+        class="caption font-weight-light grey--text text--lighten-1 text-center"
+      >&copy; {{ (new Date()).getFullYear() }} — Made with 💜 by Yol Torres</div>
+      <a href="#" class="text-left">
+        <v-icon color="secondary">mdi-arrow-up-circle</v-icon>
+      </a>
+    </v-footer>
 </template>
 
 <script>
