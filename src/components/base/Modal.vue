@@ -20,7 +20,7 @@
           style="text-indent:1em!important"
         >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Github link : <a class="indigo--text darken-4" :href="link" target="_blank">{{link}}</a>.</span>
         <v-card-text>
-          <v-img class="modal-content" :src="require('@/assets/'+uri)"/>
+          <v-img class="modal-content"  :lazy-src="require('@/assets/logo.png')" :src="require('@/assets/'+uri)"/>
         </v-card-text>
       </v-card-text>
       <v-divider></v-divider>
