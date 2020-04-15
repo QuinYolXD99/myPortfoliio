@@ -7,3 +7,7 @@
     <slot />
   </v-btn>
 </template>
+<script>
+export default {}
+</script>
+

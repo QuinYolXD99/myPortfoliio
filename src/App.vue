@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  mounted() {},
+
   components: {
     CoreFooter: () => import("@/components/core/Footer"),
     CoreToolbar: () => import("@/components/core/Toolbar"),
