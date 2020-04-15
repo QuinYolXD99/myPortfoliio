@@ -4,9 +4,7 @@
       <v-flex xs12 md6 primary text-xs-center pa-5 white--text>
         <base-bubble-1 style="transform: rotate(180deg) translateX(25%)"/>
         <base-heading>Recent Projects</base-heading>
-
         <base-text class="mb-5">Here are some of my projects I've made.</base-text>
-
         <v-card color="secondary">
           <v-container grid-list-md pa-2>
             <v-layout wrap>
@@ -14,6 +12,7 @@
                 <v-img
                   @click="viewImage(image , `project${j+1}.png`)"
                   :src="require(`@/assets/project${j+1}.png`)"
+                   :lazy-src="require('@/assets/logo.png')" 
                   max-height="350"
                   aspect-ratio="2"
                 />
