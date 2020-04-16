@@ -12,7 +12,7 @@
                 <v-img
                   @click="viewImage(image , `project${j+1}.png`)"
                   :src="require(`@/assets/project${j+1}.png`)"
-                   :lazy-src="require('@/assets/logo.png')" 
+                  :lazy-src="require('@/assets/logo.png')"
                   max-height="350"
                   aspect-ratio="2"
                 />
@@ -44,29 +44,28 @@ export default {
     }
   },
   data: () => ({
-
     images: [
       {
         title: "EXPRESSDOCX",
-        link:"https://github.com/yolXD24/vue-project",
+        link: "https://github.com/yolXD24/vue-project",
         description:
           "A web application that is used to connect people to their LGU on claiming government documents"
       },
       {
         title: "Pizzamart",
-        link:"https://github.com/ramedju1003/pizzamart_system",
+        link: "https://github.com/ramedju1003/pizzamart_system",
         description:
           "A web application that is used to order pizza to local Pizza houses here in Cebu"
       },
       {
         title: "Reachout",
-        link:null,
+        link: null,
         description:
           "A reporting web application used to report OSEC cases here in Cebu"
       },
       {
         title: "Project GoCo",
-        link:null,
+        link: null,
         description:
           "A web social media-like application that is used to connect people to their LGU on their community concerns"
       }
@@ -74,7 +73,7 @@ export default {
     index: null
   }),
   methods: {
-    viewImage(image , src) {
+    viewImage(image, src) {
       this.$refs.modal.uri = src;
       this.$refs.modal.link = image.link;
       this.$refs.modal.title = image.title;

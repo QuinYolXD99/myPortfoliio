@@ -78,7 +78,7 @@ export default {
     items: [
       { account: "yoltorres24@gmail.com", icon: "mdi-gmail" },
       { account: "www.facebook.com/yoltorres24", icon: "mdi-facebook" },
-      { account: "www.github.com/quintyolxd99", icon: "mdi-github-circle" },
+      { account: "www.github.com/quinyolxd99", icon: "mdi-github-circle" },
       {
         account: "www.linkedin.com/in/leonilojr-torres-722027196",
         icon: "mdi-linkedin-box"
