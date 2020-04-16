@@ -1,14 +1,13 @@
-import Vue from 'vue'
-// import './plugins/vuetify'
-import './plugins/base'
-import App from './App.vue'
-import store from './store'
-import 'roboto-fontface/css/roboto/roboto-fontface.css'
-import '@mdi/font/css/materialdesignicons.min.css'
+/* eslint-disable */
+import Vue from 'vue';
+import './plugins/base';
+import App from './App.vue';
+import store from './store';
+import 'roboto-fontface/css/roboto/roboto-fontface.css';
+import '@mdi/font/css/materialdesignicons.min.css';
 import Vuetify from 'vuetify';
 import 'vuetify/dist/vuetify.min.css';
 import emmiter from './bus.js';
-Vue.config.productionTip = false;
 Vue.prototype.$emmiter = emmiter;
 Vue.use(Vuetify, {
   theme: {
@@ -24,7 +23,6 @@ Vue.use(Vuetify, {
   },
   iconfont: 'mdi'
 });
-
 Vue.config.productionTip = false
 new Vue({
   store,
