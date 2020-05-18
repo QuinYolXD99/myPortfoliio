@@ -50,7 +50,7 @@ export default {
   methods: {
     validate() {
       if (this.$refs.my_form.validate()) {
-        alert("comming soon!")
+        this.$emmiter.$emit("message_sent" , "Your message is being proccessed by our system.Please wait for our response. Thank you!")
       }
     }
   },

@@ -21,8 +21,9 @@
 
         <v-layout align-center justify-center>
           <v-flex xs10 md9>
-            <base-heading>Welcome!</base-heading>
-            <base-text>
+            <base-heading  v-if="hidden-sm-and-down">Welcome!</base-heading>
+            <h1 v-else class="text-center headline"><center> Welcome! </center></h1>
+            <base-text >
               Hi! My name is
               <b>Yol Torres</b> , and I am a junior Web Developer and a freelancer.I have diverse set of skills inline with the latest trends and technology , ranging from design to HTML + CSS + Javascript ,and also with Vue JS , React JS , all the way to PHP Laravel , Node JS and ASP.net.I enjoy building web applications from small business sites to rich interactive applications.If you are a business seeking for a web presence or any employer looking a developer to hire , you can get in touch with me here.
             </base-text>

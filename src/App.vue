@@ -10,6 +10,10 @@
       <core-view/>
       <core-footer/>
     </div>
+    <v-snackbar v-model="snackbar" multi-line :timeout="timeout">
+      {{ text }}
+      <v-btn color="primary" small text @click="snackbar = false">Close</v-btn>
+    </v-snackbar>
   </v-app>
 </template>
 
@@ -24,10 +28,22 @@ export default {
 
   data() {
     return {
-      isLoading: true //!this.$vuetify.breakpoint.smAndDown ? true : false
+      isLoading: true, //!this.$vuetify.breakpoint.smAndDown ? true : false,
+      snackbar: false,
+      text: "",
+      timeout: 3000
     };
   },
+  methods: {
+    notify(message){
+      this.snackbar = true;
+      this.text = message;
+    }
+  },
   mounted() {
+    this.$emmiter.$on("message_sent", (message) => {
+      this.notify(message)
+    });
     setTimeout(() => {
       this.isLoading = false;
     }, 2500);
