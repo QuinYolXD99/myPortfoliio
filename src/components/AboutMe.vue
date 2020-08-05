@@ -10,7 +10,7 @@
             {{info.details}}
           </base-text>
         </v-layout>
-        <!-- <v-layout v-for="(skill, i) in skills" :key="i+'b'" style="color: black;" wrap>
+       <v-layout v-for="(skill, i) in skills" :key="i+'b'" style="color: black;" wrap>
           <v-flex xs6 text-uppercase v-text="skill.name"/>
           <v-flex xs6 text-xs-right v-text="`${skill.value}%`"/>
           <v-tooltip top>
@@ -29,7 +29,7 @@
           </base-text>
         </v-layout>
         <!-- <base-heading class="mt-3 primary--text">Quotes</base-heading>
-        <base-text class="mb-1">"If there is no way , then create your own way."</base-text>-->
+        <base-text class="mb-1">"If there is no way , then create your own way."</base-text>
       </v-flex>
       <v-flex hidden-sm-and-down md6>
         <v-img
