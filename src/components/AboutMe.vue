@@ -19,7 +19,7 @@
             </template>
             <span>{{skill.value}}%</span>
           </v-tooltip>
-        </v-layout>-->
+        </v-layout>
         <v-divider class="mr-10" width="70%"></v-divider>
         <base-Subheading class="primary--text mt-5">Contact Information</base-Subheading>
         <v-layout v-for="(info, i) in items" :key="i+'*'">
